@@ -1,0 +1,302 @@
+<div>
+    <div class="main-wrapper">
+
+        <app-menu-bar></app-menu-bar>
+
+        <div class="page-wrapper">
+
+            <!-- navbar Starts -->
+            <nav class="navbar">
+                <a href="#" class="sidebar-toggler">
+                    <i data-feather="menu"></i>
+                </a>
+                <div class="navbar-content">
+                    <form class="search-form w-25">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i data-feather="search"></i>
+                            </div>
+                            <!-- <input type="text" class="form-control" id="navbarForm" placeholder="Search here..."> -->
+                        </div>
+                    </form>
+                    <!-- <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="notificationDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="bell"></i>
+                                <div class="indicator">
+                                    <div class="circle"></div>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu p-0" aria-labelledby="notificationDropdown">
+                                <div class="px-3 py-2 d-flex align-items-center justify-content-between border-bottom">
+                                    <p>6 New Notifications</p>
+                                    <a class="text-muted">Clear all</a>
+                                </div>
+                                <div class="p-1">
+                                    <a class="dropdown-item d-flex align-items-center py-2">
+                                        <div
+                                            class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                                            <i class="icon-sm text-white" data-feather="gift"></i>
+                                        </div>
+                                        <div class="flex-grow-1 me-2">
+                                            <p>New Order Recieved</p>
+                                            <p class="tx-12 text-muted">30 min ago</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center py-2">
+                                        <div
+                                            class="wd-30 ht-30 d-flex align-items-center justify-content-center bg-primary rounded-circle me-3">
+                                            <i class="icon-sm text-white" data-feather="alert-circle"></i>
+                                        </div>
+                                        <div class="flex-grow-1 me-2">
+                                            <p>Server Limit Reached!</p>
+                                            <p class="tx-12 text-muted">1 hrs ago</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="px-3 py-2 d-flex align-items-center justify-content-center border-top">
+                                    <a>View all</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="wd-30 ht-30 rounded-circle" src="../images/reviewer/1.jpg" alt="profile">
+                            </a>
+                            <div class="dropdown-menu p-0" aria-labelledby="profileDropdown">
+                                <div class="d-flex flex-column align-items-center border-bottom px-5 py-3">
+                                    <div class="mb-3">
+                                        <img class="wd-80 ht-80 rounded-circle" src="../images/reviewer/1.jpg" alt="">
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="tx-16 fw-bolder">Nelson Kelly Burton</p>
+                                        <p class="tx-12 text-muted">nelsonn&#64;gmail.com</p>
+                                    </div>
+                                </div>
+                                <ul class="list-unstyled p-1">
+                                    <li class="dropdown-item py-2">
+                                        <a href="profile.html" class="text-body ms-0">
+                                            <i class="me-2 icon-md" data-feather="user"></i>
+                                            <span>Profile</span>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item py-2">
+                                        <a class="text-body ms-0">
+                                            <i class="me-2 icon-md" data-feather="edit"></i>
+                                            <span>Edit Profile</span>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item py-2">
+                                        <a class="text-body ms-0">
+                                            <i class="me-2 icon-md" data-feather="repeat"></i>
+                                            <span>Switch User</span>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-item py-2">
+                                        <a class="text-body ms-0">
+                                            <i class="me-2 icon-md" data-feather="log-out"></i>
+                                            <span>Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul> -->
+                </div>
+            </nav>
+            <!-- navbar Ends -->
+
+            <!-- Page Content Starts -->
+
+            <div class="page-content">
+
+                <nav class="page-breadcrumb d-flex align-items-center justify-content-between">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a routerLink="/home">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Employee List</li>
+                    </ol>
+                    <!-- <a routerLink="/add-video" class="btn btn-primary"><i class="link-icon" data-feather="plus"></i>
+                        Add
+                        Video</a> -->
+                </nav>
+
+                <div class="search-box p-4 bg-white rounded mb-3 box-shadow">
+                    <form class="forms-sample">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <h3>Employee Lists</h3>
+                            </div>
+                            <!-- <div class="col-lg-3 col-md-4 " style="margin-left: auto;">
+                                <select (change)="onStatusChange($event, inputSearch.value)"
+                                    class="form-select selectElement form-select-lg">
+                                    <option value="1">Show Entries</option>
+                                    <option value="2">Active</option>
+                                    <option value="3">Non Active</option>
+                                </select>
+                            </div> -->
+                            <div style="margin-left: auto;" class="col-lg-3 col-md-4">
+                                <input type="text" name="search" placeholder=" Search by Title" id="inputSearch"
+                                    class="form-control" #inputSearch>
+                                <button (click)="search(inputSearch.value, $event)" class="btn btn-primary"><i
+                                        class="link-icon" data-feather="plus"></i>
+                                    Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="dataTableExample" class="table">
+                                        <thead>
+                                            <tr>
+
+                                                <th style="font-size: 17px; font-weight: bold;">Id</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Payroll Number</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Forenames</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Surname</th>
+                                                <th style="font-size: 17px; font-weight: bold;">DateOfBirth
+                                                </th>
+                                                <th style="font-size: 17px; font-weight: bold;">Phone Number</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Mobile</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Address</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Address 2</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Postcode</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Email Home</th>
+                                                <th style="font-size: 17px; font-weight: bold;">Start Date</th>
+                                                <th style="font-size: 17px; font-weight: bold;" class="text-center">
+                                                    Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let item of filteredUsers">
+                                                <td style="font-size: 20px; font-weight: bold;">{{item.id}}</td>
+                                                <td style="font-size: 20px;">{{item.payrollNumber}}
+                                                </td>
+                                                <td style="font-size: 20px;">{{item.forenames}}</td>
+                                                <td style="font-size: 20px;">{{item.surname}}</td>
+                                                <td style="font-size: 20px;">
+                                                    {{formatDate(item.dateOfBirth.toString())}}
+                                                </td>
+                                                <td style="font-size: 20px;">{{item.telephone}}</td>
+                                                <td style="font-size: 20px;">{{item.mobile}}</td>
+                                                <td style="font-size: 20px;">{{item.address}}</td>
+                                                <td style="font-size: 20px;">{{item.address2}}</td>
+                                                <td style="font-size: 20px;">{{item.postcode}}</td>
+                                                <td style="font-size: 20px;">{{item.emailHome}}</td>
+                                                <td style="font-size: 20px;">
+                                                    {{formatDate(item.startDate.toString())}}
+                                                </td>
+                                                <td style="font-size: 20px; " class="text-center">
+
+                                                    <button (click)="removeEmployee(item.id)"
+                                                        style="font-size: 18px; background-color: rgba(255, 0, 0, 0.89)"
+                                                        class="text-center" class="small-button btn btn-primary">
+
+                                                        <i class="link-icon" data-feather="arrow-left"></i>
+                                                        Remove</button>
+                                                    <ul></ul>
+                                                    <button [routerLink]="['details', item.id]" style="font-size: 20px;"
+                                                        class="text-center" class="small-button btn btn-primary">
+
+                                                        <i class="link-icon" data-feather="arrow-left"></i>
+                                                        Update</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="row">
+                        <div class="dataTables_paginate">
+                            <ul class="pagination">
+                                <li class="paginate_button page-item">
+                                    <a href="#" class="page-link">Previous</a>
+                                </li>
+                                <li class="paginate_button page-item active"><a href="#" class="page-link">1</a></li>
+                                <li class="paginate_button page-item"><a href="#" class="page-link">2</a></li>
+                                <li class="paginate_button page-item"><a href="#" class="page-link">3</a></li>
+                                <li class="paginate_button page-item"><a href="#" class="page-link">Next</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+
+
+                <!-- <div class="container">
+                    <div class="row masonry-item">
+                        <div *ngFor="let item of productList" class="col-lg-4 col-md-6 col-sm-12 masonry">
+                            <div class="package-one">
+                                <div class="img-wapper">
+                                    <video style="width: 100%;
+                                        height: 300px;" src="{{item.videoPath | imageUrl}}" alt="image"> </video>
+                                </div>
+                                <div class="package-content">
+                                    <h3><a href="#">{{item.description}}</a></h3>
+                                    <p>{{item.name}}</p>
+                                    <ul class="ct-action">
+                                        <li><a href="/booking" class="booking-btn">SUBMIT</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+ -->
+                <div class="row">
+                    <div class="dataTables_paginate">
+                        <ul class="pagination">
+                            <!-- <li class="paginate_button page-item">
+                                <a href="#" class="page-link">Previous</a>
+                            </li> -->
+                            <!-- <li class="paginate_button page-item active"><a href="#" class="page-link">1</a></li> -->
+                            <!-- <li class="paginate_button page-item"><a href="#" class="page-link">2</a></li> -->
+                            <!-- <li class="paginate_button page-item"><a href="#" class="page-link">3</a></li> -->
+                            <button style="margin: 5px;" class="btn btn-primary"
+                                (click)="Previous(inputSearch.value)">Previous</button>
+
+
+                            <button style="margin: 5px;" class="btn btn-primary"
+                                (click)="Next(inputSearch.value)">Next</button>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Page Content Ends -->
+
+            <!-- footer Starts -->
+            <footer
+                class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small">
+                <p class="text-muted mb-1 mb-md-0">Copyright © 2024 <a routerLink="/home" target="_blank"></a>.
+                </p>
+                <p class="text-muted">Powered By <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i>
+                    Elixir Team</p>
+            </footer>
+            <!-- footer Ends -->
+
+        </div>
+    </div>
+
+
+
+</div>

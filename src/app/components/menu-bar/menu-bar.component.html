@@ -1,0 +1,41 @@
+<!-- sidebar starts -->
+<nav class="sidebar">
+    <div class="sidebar-header">
+        <a class="sidebar-brand">
+            <img alt="logo" class="w-75">
+        </a>
+        <div class="sidebar-toggler not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="sidebar-body">
+        <ul class="nav">
+            <li class="nav-item ">
+                <a class="nav-link" data-bs-toggle="collapse" href="#events" role="button" aria-expanded="false"
+                    aria-controls="events">
+                    <i class="link-icon" data-feather="user"></i>
+                    <span style="font-size: 22px;" class="link-title">Employees</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse" id="events">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a style="font-size: 22px;" routerLink="/add-employee" class="nav-link">Add Employee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-size: 22px;" routerLink="/employee-list" class="nav-link">Employee List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-size: 22px;" routerLink="/import-employee" class="nav-link">Import</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-size: 22px;" routerLink="/export-employee" class="nav-link">Export</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>

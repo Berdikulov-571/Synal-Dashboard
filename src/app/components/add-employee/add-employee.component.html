@@ -1,0 +1,103 @@
+<div>
+    <div class="main-wrapper">
+        <app-menu-bar></app-menu-bar>
+        <div class="page-wrapper">
+            <nav class="navbar">
+                <a href="#" class="sidebar-toggler">
+                    <i data-feather="menu"></i>
+                </a>
+                <!-- <div class="navbar-content">
+                    <form class="search-form w-25">
+                        <div class="input-group">
+                            <div class="input-group-text">
+                                <i data-feather="search"></i>
+                            </div>
+                            <input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
+                        </div>
+                    </form>
+                </div> -->
+            </nav>
+
+            <div class="page-content">
+
+                <nav class="page-breadcrumb d-flex align-items-center justify-content-between">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a routerLink="/home">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Add Employee</li>
+                    </ol>
+                    <a routerLink="/employee-list" class="btn btn-primary"><i class="link-icon"
+                            data-feather="arrow-left"></i>
+                        Employees List</a>
+                </nav>
+                <div class="row">
+                    <div class="col-md-12 grid-margin stretch-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="row forms-sample">
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Payroll Number</label>
+                                        <input type="text" class="form-control" id="payrollNumber" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Forenames</label>
+                                        <input type="text" class="form-control" id="forenames" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Surname</label>
+                                        <input type="text" class="form-control" id="surname" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">DateOfBirth</label>
+                                        <input type="text" class="form-control" id="dateOfBirth" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Phone Number</label>
+                                        <input type="text" class="form-control" id="telephone" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Mobile</label>
+                                        <input type="text" class="form-control" id="mobile" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Address 2</label>
+                                        <input type="text" class="form-control" id="address2" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Postcode</label>
+                                        <input type="text" class="form-control" id="postcode" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Email Home</label>
+                                        <input type="text" class="form-control" id="emailHome" placeholder="">
+                                    </div>
+                                    <div class="col-lg-6 mb-3">
+                                        <label for="title" class="form-label">Start Date</label>
+                                        <input type="text" class="form-control" id="startDate" placeholder="">
+                                    </div>
+                                    <div class="text-center">
+                                        <button (click)="createEmployee($event)" type="button" class="btn btn-primary">
+                                            <i class="link-icon" data-feather="plus"></i> Create Employee
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer
+                class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small">
+                <p class="text-muted mb-1 mb-md-0">Copyright © 2024 <a routerLink="/home" target="_blank"></a>.
+                </p>
+                <p class="text-muted">Powered By <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i>
+                    Elixir Team</p>
+            </footer>
+
+        </div>
+    </div>
+</div>

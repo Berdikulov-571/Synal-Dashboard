@@ -1,0 +1,16 @@
+.col-lg-3.col-md-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-lg-3.col-md-4 input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+    /* Masofani sozlash uchun */
+}
+
+.col-lg-3.col-md-4 button {
+    margin-left: 10px;
+    /* Masofani sozlash uchun */
+}
